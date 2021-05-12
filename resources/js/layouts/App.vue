@@ -1,17 +1,22 @@
 <template>
-    <div class="container">
-    	<sidebar></sidebar>
-        <router-view> </router-view>
+
+    <div>
+    <!-- 	<sidebar></sidebar> -->
+    	<div class="container-grid">
+    		<router-view> </router-view>
+    	</div>
+        
     </div>
+
 
 
 </template>
  
 <script>
-import sidebar from "../components/sidebar.vue";
+// import sidebar from "../components/sidebar.vue";
     export default {
         name:'AppLayout',
-        components: { sidebar
-  		},
+    //     components: { sidebar
+  		// },
     };
 </script>

@@ -1,18 +1,27 @@
 <template>
-    <div class="container"> 
-                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav">
-                    <router-link to="/" class="nav-item nav-link">Products List</router-link>
-                    <router-link to="/create" class="nav-item nav-link">Create Product</router-link>
-                      <router-link to="/category" class="nav-item nav-link">All categories</router-link>
-                      <router-link to="/category" class="nav-item nav-link">All categories</router-link>
+    <div > 
+   <div>
+<b-navbar toggleable="lg" type="light" variant="light">
+    <b-navbar-brand href="#">NavBar</b-navbar-brand>
 
-                        <router-link to="/category/create" class="nav-item nav-link">Create categories</router-link>
-                </div>
-            </div>
-        </nav>
-        <router-view> </router-view>
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item href="/">Products</b-nav-item>
+        <b-nav-item href="/category">Categories</b-nav-item>
+        <b-nav-item href="#">Pricing</b-nav-item>
+         <b-nav-item href="/login">Login</b-nav-item>
+        <b-nav-item href="/register">Register</b-nav-item>
+
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+</div>
+<div class="container">
+    <router-view> </router-view>
+</div>
+        
     </div>
 </template>
  

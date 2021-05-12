@@ -32,7 +32,6 @@
                     .post('http://localhost:8000/api/products', this.product)
                     .then(response => (
                         this.$router.push({ name: 'home.create' })
-
                     ))
                      // console.log(response);
                     .catch(err => console.log(err))
@@ -41,5 +40,3 @@
         }
     }
 </script>
-
-

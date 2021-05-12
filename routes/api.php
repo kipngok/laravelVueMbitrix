@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('api')->group(function () {
-    Route::resource('products','App\Http\Controllers\ProductController');
-    Route::resource('categories','App\Http\Controllers\CategoryController');
-
+Route::resource('products','App\Http\Controllers\ProductController');
+Route::resource('categories','App\Http\Controllers\CategoryController');
+Route::resource('users','App\Http\Controllers\RegisterController');
+Route::post('login','App\Http\Controllers\LoginController@login');
 
 });
+
