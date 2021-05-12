@@ -25,7 +25,9 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "bootstrap-vue": "^2.21.2",
         "vue-axios": "^3.2.4",
-        "vue-router": "^3.5.1"
+        "vue-router": "^3.5.1",
+        "vue-sidebar-menu": "^5.0.0-alpha.9"
     }
 }
